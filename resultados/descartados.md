@@ -11,19 +11,23 @@ Formato por entrada:
 ## [ID] — [Título]
 
 - Línea: [Procesos | Inventarios]
-- Etapa donde se descartó: [Screening | Verificación | Análisis]
+- Etapa donde se descartó: [Prefiltro (Fase 2) | Verificación (Fase 3) | Abstract screening/Full text (Fase 4-5)]
+- candidate_stage al momento del descarte: [PREFILTER_DESCARTADO | ...]
 - Motivo: [cita la regla exacta de CLAUDE.md o el hallazgo que lo descarta]
 - Score al momento de descarte (si aplica): X/100
 - Fecha: 
 ```
 
-Motivos frecuentes esperados (no exhaustivo):
+Motivos frecuentes esperados (no exhaustivo, ver `CLAUDE.md` secciones 9 y
+17):
 
-- Exclusión metodológica Lean/5S/Kaizen/Lean Six Sigma (Línea 1).
-- Checklist genérico de orden/limpieza sin modelo de inventario real
-  (Línea 2).
-- Fuera de rango temporal (no 2021-2026) o idioma (no es/en).
-- Score preliminar o final por debajo del umbral (60/100).
+- Exclusión metodológica Lean/5S/Kaizen/Lean Six Sigma (línea procesos).
+- Checklist genérico de orden/limpieza, FODA/DAFO sin intervención, o KPIs
+  solo propuestos sin modelo de inventario real implementado.
+- Fuera de rango temporal (no 2015-2026, o fuera de 2021-2026 sin
+  justificación excepcional) o idioma (no es/en).
+- Score preliminar o final por debajo de los umbrales de clasificación
+  (`CLAUDE.md` sección 17).
 - Identidad bibliográfica no verificable (`NO VERIFICADO` en verificación
   central: título/autores/año/revista o universidad).
 - Sector sin analogía operativa real con la MYPE del caso de estudio.
